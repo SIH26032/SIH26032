@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KisanProcure | Smart Procurement Platform</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id="signupPage" class="signup-page">
+
+    <div class="signup-background"></div>
+
+    <div class="signup-container">
+
+        <!-- LEFT SIDE -->
+        <div class="signup-info">
+
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+
+                <div>
+                    <h1>Kisan<span>Procure</span></h1>
+                    <p>Smart Procurement Platform</p>
+                </div>
+            </div>
+
+            <div class="info-content">
+
+                <span class="badge">
+                    <i class="fa-solid fa-leaf"></i>
+                    Digital Agriculture
+                </span>
+
+                <h2>
+                    Smarter Procurement.<br>
+                    <span>Less Waiting.</span>
+                </h2>
+
+                <p>
+                    Book your procurement slot, track your queue,
+                    monitor procurement status and receive payment
+                    updates — all from one platform.
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <h3>Easy Slot Booking</h3>
+                            <p>Choose your preferred procurement date and time.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <h3>Live Queue Tracking</h3>
+                            <p>Know your token position and estimated waiting time.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+
+                        <div>
+                            <h3>Payment Tracking</h3>
+                            <p>Track your procurement payment status in real time.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2026 KisanProcure • Smart Agriculture Infrastructure
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="signup-card">
+
+            <div class="form-header">
+
+                <div>
+                    <span class="form-label">WELCOME TO KISANPROCURE</span>
+
+                    <h2>Create your account</h2>
+
+                    <p>
+                        Register to access smart procurement services.
+                    </p>
+                </div>
+
+                <div class="secure-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+            </div>
+
+
+            <!-- USER TYPE -->
+
+            <div class="user-type">
+
+                <label class="type-option active">
+                    <input type="radio" name="userType" value="farmer" checked>
+
+                    <div class="type-icon">
+                        <i class="fa-solid fa-tractor"></i>
+                    </div>
+
+                    <div>
+                        <strong>Farmer</strong>
+                        <span>Book & track procurement</span>
+                    </div>
+
+                    <i class="fa-solid fa-circle-check check"></i>
+                </label>
+
+
+                <label class="type-option">
+                    <input type="radio" name="userType" value="officer">
+
+                    <div class="type-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+
+                    <div>
+                        <strong>Procurement Officer</strong>
+                        <span>Manage centres & queues</span>
+                    </div>
+
+                    <i class="fa-solid fa-circle-check check"></i>
+                </label>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form id="signupForm">
+
+                <div class="form-grid">
+
+                    <div class="input-group full">
+                        <label>Full Name</label>
+
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Mobile Number</label>
+
+                        <div class="input-wrapper">
+
+                            <span class="country-code">+91</span>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                maxlength="10"
+                                placeholder="Enter mobile number"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Farmer ID</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-id-card"></i>
+
+                            <input
+                                type="text"
+                                id="farmerId"
+                                placeholder="Enter Farmer ID"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>State</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <select id="state" required>
+
+                                <option value="">Select State</option>
+
+                                <option>Karnataka</option>
+                                <option>Maharashtra</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Punjab</option>
+                                <option>Haryana</option>
+                                <option>Rajasthan</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Telangana</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>District</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-map"></i>
+
+                            <select id="district" required>
+
+                                <option value="">Select District</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label>Password</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create a strong password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="password-strength">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="terms">
+
+                    <label>
+
+                        <input type="checkbox" id="terms" required>
+
+                        <span>
+                            I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy</a>.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <button class="create-btn" type="submit">
+
+                    <span>Create Account</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="#" id="loginLink">
+                        Sign in
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section id="dashboardPage" class="dashboard hidden">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+
+            <div>
+                <h2>Kisan<span>Procure</span></h2>
+                <small>PROCUREMENT SYSTEM</small>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-menu">
+
+            <p class="menu-title">MAIN MENU</p>
+
+            <a class="menu-item active">
+                <i class="fa-solid fa-chart-pie"></i>
+                Dashboard
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-users"></i>
+                Farmers
+                <span class="menu-count">12.4K</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                Slot Management
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                Queue Management
+                <span class="menu-count alert">342</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-wheat-awn"></i>
+                Procurement
+            </a>
+
+
+            <p class="menu-title">OPERATIONS</p>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-wallet"></i>
+                Payments
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-regular fa-bell"></i>
+                Notifications
+                <span class="notification-dot"></span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-location-dot"></i>
+                Procurement Centres
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <a class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <div class="help-card">
+
+                <div class="help-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <p>Contact support</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOP NAVBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <button class="mobile-menu" id="mobileMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <h1>Dashboard</h1>
+
+                <p>
+                    Procurement overview
+                    <span>•</span>
+                    Tuesday, 08 September 2026
+                </p>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <div class="search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                    >
+
+                    <span>⌘ K</span>
+
+                </div>
+
+
+                <button class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        4
+                    </span>
+
+                </button>
+
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        <span id="profileInitial">A</span>
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="profileName">
+                            Admin User
+                        </strong>
+
+                        <span>
+                            Administrator
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-banner">
+
+                <div>
+
+                    <span class="welcome-tag">
+                        <i class="fa-solid fa-circle"></i>
+                        SYSTEM OPERATIONAL
+                    </span>
+
+                    <h2>
+                        Good morning,
+                        <span id="welcomeName">Admin</span> 👋
+                    </h2>
+
+                    <p>
+                        Here's what's happening across your procurement
+                        centres today.
+                    </p>
+
+                </div>
+
+                <div class="banner-date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <div>
+                        <span>TODAY</span>
+                        <strong>08 SEP 2026</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KPI CARDS -->
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            8.4%
+                        </span>
+
+                    </div>
+
+                    <p>Total Farmers</p>
+
+                    <h3>12,458</h3>
+
+                    <small>
+                        Registered farmers
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon blue">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            5.2%
+                        </span>
+
+                    </div>
+
+                    <p>Today's Slots</p>
+
+                    <h3>1,284</h3>
+
+                    <small>
+                        <b>92%</b> booking capacity
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon amber">
+                            <i class="fa-solid fa-users-line"></i>
+                        </div>
+
+                        <span class="trend warning">
+                            Live
+                        </span>
+
+                    </div>
+
+                    <p>Farmers in Queue</p>
+
+                    <h3>342</h3>
+
+                    <small>
+                        Avg. wait <b>28 min</b>
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12.7%
+                        </span>
+
+                    </div>
+
+                    <p>Procurement Today</p>
+
+                    <h3>846 <small>MT</small></h3>
+
+                    <small>
+                        72% of daily target
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card payment-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon cyan">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            78%
+                        </span>
+
+                    </div>
+
+                    <p>Payments Processed</p>
+
+                    <h3>₹2.84 Cr</h3>
+
+                    <div class="mini-progress">
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAIN GRID -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- PROCUREMENT CHART -->
+
+                <div class="panel procurement-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>Procurement Overview</h3>
+
+                            <p>
+                                Total quantity procured across centres
+                            </p>
+
+                        </div>
+
+                        <select class="period-select">
+                            <option>This Week</option>
+                            <option>This Month</option>
+                            <option>This Season</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="chart-y">
+
+                            <span>1000</span>
+                            <span>750</span>
+                            <span>500</span>
+                            <span>250</span>
+                            <span>0</span>
+
+                        </div>
+
+
+                        <div class="chart-area">
+
+                            <div class="grid-line" style="top:0"></div>
+                            <div class="grid-line" style="top:25%"></div>
+                            <div class="grid-line" style="top:50%"></div>
+                            <div class="grid-line" style="top:75%"></div>
+                            <div class="grid-line" style="top:100%"></div>
+
+
+                            <svg
+                                class="chart-svg"
+                                viewBox="0 0 700 240"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="areaGradient"
+                                        x1="0"
+                                        x2="0"
+                                        y1="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity=".35"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+
+                                    </linearGradient>
+
+                                </defs>
+
+
+                                <path
+                                    class="area"
+                                    d="M0,190 C60,170 80,150 120,165 C170,185 200,110 250,125 C300,140 315,80 360,100 C410,125 440,65 480,75 C530,90 550,40 590,58 C625,75 650,25 700,42 L700,240 L0,240 Z"
+                                />
+
+                                <path
+                                    class="line"
+                                    d="M0,190 C60,170 80,150 120,165 C170,185 200,110 250,125 C300,140 315,80 360,100 C410,125 440,65 480,75 C530,90 550,40 590,58 C625,75 650,25 700,42"
+                                />
+
+                                <circle cx="700" cy="42" r="5"></circle>
+
+                            </svg>
+
+
+                            <div class="chart-labels">
+
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LIVE QUEUE -->
+
+                <div class="panel queue-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>Live Queue Status</h3>
+
+                            <p>Real-time centre activity</p>
+
+                        </div>
+
+                        <span class="live-indicator">
+                            <i></i> LIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="queue-list">
+
+
+                        <div class="queue-row">
+
+                            <div class="centre-avatar">
+                                A
+                            </div>
+
+                            <div class="centre-info">
+
+                                <strong>Centre A</strong>
+
+                                <span>North Zone</span>
+
+                            </div>
+
+                            <div class="queue-number">
+
+                                <strong>42</strong>
+
+                                <span>waiting</span>
+
+                            </div>
+
+                            <span class="status normal">
+                                Normal
+                            </span>
+
+                        </div>
+
+
+                        <div class="queue-row">
+
+                            <div class="centre-avatar">
+                                B
+                            </div>
+
+                            <div class="centre-info">
+
+                                <strong>Centre B</strong>
+
+                                <span>East Zone</span>
+
+                            </div>
+
+                            <div class="queue-number">
+
+                                <strong>68</strong>
+
+                                <span>waiting</span>
+
+                            </div>
+
+                            <span class="status busy">
+                                Busy
+                            </span>
+
+                        </div>
+
+
+                        <div class="queue-row">
+
+                            <div class="centre-avatar">
+                                C
+                            </div>
+
+                            <div class="centre-info">
+
+                                <strong>Centre C</strong>
+
+                                <span>South Zone</span>
+
+                            </div>
+
+                            <div class="queue-number">
+
+                                <strong>91</strong>
+
+                                <span>waiting</span>
+
+                            </div>
+
+                            <span class="status critical">
+                                Critical
+                            </span>
+
+                        </div>
+
+
+                        <div class="queue-row">
+
+                            <div class="centre-avatar">
+                                D
+                            </div>
+
+                            <div class="centre-info">
+
+                                <strong>Centre D</strong>
+
+                                <span>West Zone</span>
+
+                            </div>
+
+                            <div class="queue-number">
+
+                                <strong>27</strong>
+
+                                <span>waiting</span>
+
+                            </div>
+
+                            <span class="status normal">
+                                Normal
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="outline-btn">
+                        View Live Queue
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOTTOM GRID -->
+
+            <div class="bottom-grid">
+
+
+                <!-- SLOTS -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>Today's Slot Schedule</h3>
+
+                            <p>Booking capacity by time</p>
+
+                        </div>
+
+                        <button class="text-btn">
+                            Manage Slots
+                        </button>
+
+                    </div>
+
+
+                    <div class="slots">
+
+                        <div class="slot">
+
+                            <span>09:00 AM</span>
+
+                            <div class="slot-bar">
+                                <span style="width:96%"></span>
+                            </div>
+
+                            <strong>48/50</strong>
+
+                        </div>
+
+
+                        <div class="slot">
+
+                            <span>10:00 AM</span>
+
+                            <div class="slot-bar">
+                                <span style="width:84%"></span>
+                            </div>
+
+                            <strong>42/50</strong>
+
+                        </div>
+
+
+                        <div class="slot">
+
+                            <span>11:00 AM</span>
+
+                            <div class="slot-bar">
+                                <span style="width:92%"></span>
+                            </div>
+
+                            <strong>46/50</strong>
+
+                        </div>
+
+
+                        <div class="slot">
+
+                            <span>12:00 PM</span>
+
+                            <div class="slot-bar">
+                                <span style="width:50%"></span>
+                            </div>
+
+                            <strong>25/50</strong>
+
+                        </div>
+
+
+                        <div class="slot">
+
+                            <span>01:00 PM</span>
+
+                            <div class="slot-bar">
+                                <span style="width:78%"></span>
+                            </div>
+
+                            <strong>39/50</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAYMENTS -->
+
+                <div class="panel payment-status">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>Payment Status</h3>
+
+                            <p>Today's transactions</p>
+
+                        </div>
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </div>
+
+
+                    <div class="payment-content">
+
+                        <div class="donut">
+
+                            <div>
+                                <strong>78%</strong>
+                                <span>Paid</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="payment-legend">
+
+                            <div>
+                                <span class="legend-dot paid"></span>
+                                <span>Paid</span>
+                                <strong>78%</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend-dot pending"></span>
+                                <span>Pending</span>
+                                <strong>17%</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend-dot processing"></span>
+                                <span>Processing</span>
+                                <strong>5%</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ALERTS -->
+
+                <div class="panel alerts-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>Recent Alerts</h3>
+
+                            <p>System notifications</p>
+
+                        </div>
+
+                        <span class="alert-count">
+                            4 new
+                        </span>
+
+                    </div>
+
+
+                    <div class="alerts">
+
+                        <div class="alert-item">
+
+                            <div class="alert-icon warning">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Centre B is reaching capacity
+                                </strong>
+
+                                <span>
+                                    68 farmers currently waiting
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert-item">
+
+                            <div class="alert-icon danger">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Payment verification required
+                                </strong>
+
+                                <span>
+                                    32 transactions need attention
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert-item">
+
+                            <div class="alert-icon success">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Centre D completed today's target
+                                </strong>
+
+                                <span>
+                                    420 MT successfully procured
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<div id="toast" class="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <div>
+        <strong>Success</strong>
+        <span>Account created successfully.</span>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
