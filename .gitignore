@@ -1,0 +1,13 @@
+# Maven build files
+backend/target/
+
+# Java compiled files
+*.class
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment files / secrets
+.env
+*.env
